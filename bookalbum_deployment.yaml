@@ -14,9 +14,9 @@ spec:
       labels:
         app: nodejs-app
     spec:
+      hostname: "231058010_Tejas_M"
       containers:
       - name: nodejs-app
-        image: tejasmohan8/nodejsdocker:latest
+        image: tejasmohan8/nodejsdocker:v1  # Update the image name to tejasmohan8/nodejsdocker:v1
         ports:
         - containerPort: 3000  # Assuming your Node.js app listens on port 3000
-      hostname: "231058010_Tejas_M"  # Set the hostname to 231058010
