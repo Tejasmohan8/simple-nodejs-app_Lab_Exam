@@ -1,21 +1,43 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: bookalbum
+#   labels:
+#     app: bookalbum
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: bookalbum
+#   template:
+#     metadata:
+#       labels:
+#         app: bookalbum
+#     spec:
+#       containers:
+#       - name: bookalbum
+#         image: sreedocker123/bookmoviealbum:latest
+#         ports:
+#         - containerPort: 80
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bookalbum
+  name: nodejs-app
   labels:
-    app: bookalbum
+    app: nodejs-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bookalbum
+      app: nodejs-app
   template:
     metadata:
       labels:
-        app: bookalbum
+        app: nodejs-app
     spec:
       containers:
-      - name: bookalbum
-        image: sreedocker123/bookmoviealbum:latest
+      - name: nodejs-app
+        image: your-nodejs-image:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000  # Assuming your Node.js app listens on port 3000
+      hostname: "231058010_Tejas_M"  # Set the hostname to 231058010
