@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: nodejs-app
-        image: your-nodejs-image:latest
+        image: tejasmohan8/nodejsdocker:latest
         ports:
         - containerPort: 3000  # Assuming your Node.js app listens on port 3000
       hostname: "231058010_Tejas_M"  # Set the hostname to 231058010
