@@ -8,7 +8,7 @@
 # ADD . /var/www/html/
 # EXPOSE 80
 # ENTRYPOINT apachectl -D FOREGROUND
-# Use an official Node.js image as the base image
+## Use an official Node.js image as the base image
 FROM node:14
 
 # Set the working directory in the container
@@ -28,3 +28,4 @@ EXPOSE 3000
 
 # Command to start the Node.js application
 CMD ["node", "index.js"]
+
