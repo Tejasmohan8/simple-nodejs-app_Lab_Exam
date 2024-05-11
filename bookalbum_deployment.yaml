@@ -14,7 +14,7 @@ spec:
       labels:
         app: nodejs-app
     spec:
-      hostname: "231058010_Tejas_M"
+      # hostname: "231058010_Tejas_M"
       containers:
       - name: nodejs-app
         image: tejasmohan8/nodejsdocker:v1  # Update the image name to tejasmohan8/nodejsdocker:v1
